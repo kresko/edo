@@ -9,11 +9,13 @@
     </head>
     <body>
         <!-- Header -->
+        <x-header>Categories</x-header>
 
         <main>
             {{ $slot }}
         </main>
 
         <!-- Footer -->
+        <x-footer></x-footer>
     </body>
 </html>
