@@ -9,7 +9,18 @@
     </head>
     <body>
         <!-- Header -->
-        <x-header>Categories</x-header>
+        <x-header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </x-header>
 
         <main>
             {{ $slot }}
