@@ -3,13 +3,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    max-width: 100%;
+}
+
+.width-1 {
+    padding: 20px 80px;
 }
 
 /**************** Header *****************/
 header {
+    min-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 20px 0;
     background-color: #000;
 }
 
@@ -36,11 +42,34 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+@media only screen and (min-width: 600px) {
+    header {
+        padding: 20px 0px;
+    }
+}
+
+/***************** Main *****************/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section.content {
+    margin: 20px 0;
+    background-color: #f4f4f4;
+}
+
+@media only screen and (min-width: 600px) {
+    section.content {
+        padding: 20px 80px;
+    }
+}
+
 /**************** Footer *****************/
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 10px;
+    justify-content: space-around;
+    padding: 20px 0px;
     background-color: #000;
 }
 
