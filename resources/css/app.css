@@ -1,11 +1,11 @@
-/**************** Views ****************/
-@import 'views/home.css';
-
-
 /**************** Base *****************/
 @import 'base/reset.css';
 @import 'base/typography.css';
 
+
 /************* Components *************/
 @import 'components/layout.css';
 
+
+/**************** Views ****************/
+@import 'views/home.css';
