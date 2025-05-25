@@ -12,39 +12,79 @@ body {
 
 /**************** Header *****************/
 header {
-    min-width: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     padding: 20px 0;
     background-color: #000;
 }
 
 header nav {
+    width: 100%;
     display: inherit;
+    flex-direction: column;
     justify-content: space-between;
-    
 }
 
 header nav ul {
     display: inherit;
+    flex-direction: inherit;
 }
 
 header nav ul li {
-    margin: 0 10px;
+    display: inherit;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+header nav ul li:hover {
+    background-color: #666;
 }
 
 header nav ul li a {
+    font-size: 24px;
     color: #fff;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+header nav ul li a .logo {
+    display: flex;
+    width: 80px;
 }
 
 @media only screen and (min-width: 600px) {
     header {
+        flex-direction: column;
         padding: 20px 0px;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    header nav ul li:hover {
+    background-color: transparent;
+}
+
+    header nav ul li {
+        padding: 0 10px;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+        background-color: transparent;
+    }
+
+    header nav ul li a .logo {
+        width: 45px;
     }
 }
 

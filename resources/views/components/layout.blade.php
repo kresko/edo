@@ -10,8 +10,8 @@
     <body>
         <!-- Header -->
         <x-header>
-            <!-- TODO: Implement mobile style-->
             <ul>
+                <li><a href="#"><img class="logo" src="{{ Vite::asset('resources/images/edo-logo.png') }}" alt="logo"/></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact</a></li>
