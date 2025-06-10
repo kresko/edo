@@ -11,17 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('edo_category', function (Blueprint $table) {
+        Schema::create('edo_product', function (Blueprint $table) {
             $table->id();
-            $table->boolean('is_root')->default(false);
-            $table->string('category_key')->unique();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->text('description')->nullable();
             $table->timestamps();
         });
-        
-        // Add any additional setup or data seeding if necessary
-        // For example, you might want to insert default categories here
     }
 
     /**
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('edo_category');
+        Schema::dropIfExists('edo_product');
     }
 };
