@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class EdoCategory extends Model
+class EdoProduct extends Model
 {
-    protected $table = 'edo_category';
+    protected $table = 'edo_product';
 
     protected $fillable = [
         'name',
